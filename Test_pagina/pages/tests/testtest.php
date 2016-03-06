@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Test A</title>
+        <link rel="stylesheet" type="text/css" href="/Test_pagina/css/main.css"/>
+        
+    </head>
+    <body>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/Test_pagina//PHP/header.php"); ?>
+    <div id="nav">
+        <?php include("nav.php"); ?>       
+    </div>
+    
+    <div class="body">
+        <h1>Test A</h1>
+        Dit is een testpagina.<br/>
+        <form action="process.php" method="get">
+            <input type="hidden" name="sender" value="testtest.php"/>
+            Type een antwoord string: <input type="text" name="data"/>
+            <input type="submit" value="Stuur in"/>
+        </form>
+    </div>
+
+    <?php include($_SERVER['DOCUMENT_ROOT']."/Test_pagina/PHP/footer.php"); ?>
+    </body>
+</html>
